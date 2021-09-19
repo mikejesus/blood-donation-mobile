@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public pages: any[] = [
+    {title: 'Home', url: '/home', icon:'home'},
+    {title: 'Profile', url: '/profile', icon:'person'},
+    {title: 'About us', url: '/about', icon:'information-circle'},
+    {title: 'Privacy Policy', url: '/privacy', icon:'document-lock'},
+    {title: 'Sign Out', url: '', icon:'log-out', route: true},
+  ];
+
   constructor() {}
+
+  signOut(){
+    console.log('Sign out')
+  }
 }
